@@ -20,16 +20,22 @@
           <mxGeometry x="170" y="170" width="100" height="80" as="geometry" />
         </mxCell>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-7" value="判断是否需要转换为红黑树" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="695" y="300" width="120" height="40" as="geometry" />
+          <mxGeometry x="695" y="320" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-11" value="使用volatile+CAS初始化" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="160" y="320" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-12" value="利用CAS设置该节点" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="410" y="310" width="120" height="40" as="geometry" />
+          <mxGeometry x="410" y="320" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Nf1yEQeSTYzdWiV93urn-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Nf1yEQeSTYzdWiV93urn-0" target="Nf1yEQeSTYzdWiV93urn-3">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Nf1yEQeSTYzdWiV93urn-0" value="根据存储的元素计算该位置是否为空" style="rhombus;whiteSpace=wrap;html=1;shadow=0;fontFamily=Helvetica;fontSize=12;align=center;strokeWidth=1;spacing=6;spacingTop=-4;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="360" y="145" width="220" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="Nf1yEQeSTYzdWiV93urn-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Nf1yEQeSTYzdWiV93urn-3" target="WIyWlLk6GJQsqaUBKTNV-7">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Nf1yEQeSTYzdWiV93urn-3" value="使用synchronized，遍历桶中的数据，并替换或新增节点到桶中" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="680" y="175" width="150" height="70" as="geometry" />
